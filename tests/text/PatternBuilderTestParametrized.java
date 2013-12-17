@@ -1,3 +1,5 @@
+package text;
+
 import me.gotter.text.regex.util.Unicode;
 import me.gotter.text.regex.PatternBuilder;
 import org.junit.Assert;
@@ -9,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class PatternBuilderTest {
+public class PatternBuilderTestParametrized {
 
 
     private String[] words;
@@ -26,7 +28,7 @@ public class PatternBuilderTest {
         });
     }
 
-    public PatternBuilderTest(String expected, String[] words) {
+    public PatternBuilderTestParametrized(String expected, String[] words) {
         this.words = words;
         this.expected = expected;
     }
